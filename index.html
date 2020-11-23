@@ -21,12 +21,7 @@
 
 <body>
     <style>
-        body {
-            background-image: url('background.png');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 100% 100%;
-        }
+
     </style>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -35,16 +30,16 @@
             <div class="collapse navbar-collapse" id="NavBar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Features <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Features</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Download <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Download</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Premium <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Premium</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">About</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-md-0">
@@ -54,21 +49,57 @@
         </div>
     </nav>
 
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-4 text-center bg-light">
-        <div class="col-md-10 p-lg-4 mx-auto my-1">
-            <h1 class="display-5 font-weight-normal">Start!</h1>
-            <div id="mapid"></div>
-            <!-- <a class="btn btn-outline-secondary" href="#">Coming soon</a> -->
+    <div class="container">
+        <div class="grid-container">
+            <div class="item1">
+                <h1>
+                    <b>Online Sail Tracker - share and compare your sailing achievements</b>
+                </h1>
+                <h3>
+                    Get all your statistics and logs in one place. Thanks to our app you can instantly upload data from any device runnig Navionics, OpenCPN, Fast Track or Sail Expert and share them
+                </h3>
+            </div>
+            <div class="item2">
+                <div id="mapid" width="600">
+                </div>
+            </div>
+            <div class="item3">
+                <img src="track.jpg" width="750" height="500">
+            </div>
+            <div class="item4">
+                <h3>
+                    Our goal is to enchance your sailing experience by providing you with easy and fast way to analize every apect of your passion. And after you are done sailing you can easly compare your speed upwind, downwind, number of tacks or even the whole track with
+                    your friends to once and for all answer the most important question - who is the best among you!
+                </h3>
+            </div>
         </div>
-        <div class="product-device shadow-sm d-none d-md-block"></div>
-        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
     </div>
+
+    <footer class="footer">
+        <div class="container-fluid">
+
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-4">
+                    <a><b>&copy;OST 2020</b></a>
+                </div>
+                <div class="col-lg-4">
+
+                    <a href=""><img src="logo_dark.png" width="40" height="40"></a>
+                </div>
+                <div class="col-lg-4">
+                    Get the App:
+                    <a href=""><img src="google_store.png" width="250" height="40"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-    <script src="myScripts.js"></script>
+    <script src="myScript.js"></script>
 </body>
 
 </html>

@@ -1,47 +1,61 @@
 body {
+    background-image: url('background2.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+body {
     padding-bottom: 20px;
 }
 
+.cover-container {
+    max-width: 180em;
+}
+
 .navbar {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 #mapid {
+    width: 750px;
     height: 500px;
 }
 
 .container {
-    max-width: 960px;
+    max-width: 1550px;
+    color: white;
 }
 
-
-/* .product-device {
-    position: absolute;
-    right: 10%;
-    bottom: -30%;
-    width: 300px;
-    height: 540px;
-    background-color: #333;
-    border-radius: 21px;
-    -webkit-transform: rotate(30deg);
-    transform: rotate(30deg);
+.footer {
+    margin-bottom: -20px;
+    background-color: #343a40;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
-.product-device::before {
-    position: absolute;
-    top: 10%;
-    right: 10px;
-    bottom: 10%;
-    left: 10px;
-    content: "";
-    background-color: rgba(255, 255, 255, .1);
-    border-radius: 5px;
+h1 {
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: -20px;
 }
 
-.product-device-2 {
-    top: -25%;
-    right: auto;
-    bottom: 0;
-    left: 5%;
-    background-color: #e5e5e5;
-} */
+h3 {
+    text-align: justify;
+    padding-top: 100px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 25px;
+    padding: 10px;
+}
+
+.grid-container>div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}

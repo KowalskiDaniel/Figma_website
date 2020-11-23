@@ -1,4 +1,4 @@
-var mymap = L.map('mapid').setView([19.708095, -155.595600], 7);
+var mymap = L.map('mapid').setView([51.785633663870584, 1.191490503996881], 5);
 
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
     attribution: 'Tiles &copy; Esri &mdash; Source: Esri'
