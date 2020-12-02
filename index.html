@@ -16,6 +16,8 @@
     <link rel="icon" href="logo.png" type="image/x-icon">
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
 
 </head>
 
@@ -60,8 +62,18 @@
                 </h3>
             </div>
             <div class="item2">
-                <div id="mapid" width="600">
-                </div>
+                <!-- <div id="mapid" width="600">
+                </div> -->
+                <div id='map' style='width: 750px; height: 500px;'></div>
+                <script>
+                    mapboxgl.accessToken = 'pk.eyJ1Ijoia293YWxza2lkYW5pZWwiLCJhIjoiY2toeDN0Mml4MGZ6MzJybXBvdnZ0N2pwbiJ9.xANFVHfmXC6L8hVvF4j9Jw';
+                    var map = new mapboxgl.Map({
+                        container: 'map',
+                        style: 'mapbox://styles/kowalskidaniel/ckhx4exkd0hs019nizg37mw2b', // stylesheet location
+                        center: [1.4869957410303694, 50.97448726677103], // starting position [lng, lat]
+                        zoom: 6 // starting zoom
+                    });
+                </script>
             </div>
             <div class="item3">
                 <img src="track.jpg" width="750" height="500">
